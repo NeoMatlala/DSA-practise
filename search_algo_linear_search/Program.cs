@@ -1,9 +1,9 @@
 ﻿// Linear search implementation with step count as well
 
-int target = 5;
-int[] arr = new int[4] { 4,7,8,5};
+string target = "Neo";
+var arr = new string[5] { "Lerato", "Zakhele", "Mponeng", "Marematlou", "neo"};
 
-var result = LinearSearchAlgo(arr, target);
+var result = StringLinearSearch(arr, target);
 
 if(result.Index != -1)
 {
@@ -15,7 +15,33 @@ else
 }
 
 
+// for strings
+LinearSearchResponse StringLinearSearch(string[] arr, string target)
+{
+    int index = -1;
+    int steps = 0;
 
+    for (int s = 0; s <= arr.Length -1; s++)
+    {
+        steps++;
+
+        if (arr[s].Equals(target, StringComparison.OrdinalIgnoreCase))
+        {
+            index = s;
+            break;
+        }
+    }
+
+    return new LinearSearchResponse
+    {
+        Index = index,
+        Steps = steps,
+    };
+}
+
+
+
+// for integers
 LinearSearchResponse LinearSearchAlgo(int[] arr, int targetValue)
 {
     int index = -1;
