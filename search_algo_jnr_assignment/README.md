@@ -1,6 +1,6 @@
-# ?? Assignment: Customer Lookup System — Linear Search
+# Assignment: Customer Lookup System — Linear Search
 
-## ?? Overview
+## Overview
 A small retail shop keeps its customer records in a simple list stored in memory. Each customer has:
 - `CustomerId` (int)
 - `Name` (string)
@@ -10,7 +10,7 @@ The system does not use a database or any advanced search structure. The shop ow
 
 ---
 
-## ?? Requirements
+##  Requirements
 
 1. Create a Customer class with the properties above.
 2. Create a list of at least 10 customers with realistic sample data.
